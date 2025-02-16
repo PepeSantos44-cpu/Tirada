@@ -1,0 +1,37 @@
+<div class="container">
+    <!-- Formulario inicial -->
+    <div class="form-section" id="userForm">
+        <h2>Tarot Balbi - 9 Áreas Feng Shui</h2>
+        <form id="readingForm">
+            <label for="birthDate">Fecha de Nacimiento:</label>
+            <input type="date" id="birthDate" name="birthDate" required>
+            
+            <label for="description">Descripción (opcional):</label>
+            <textarea id="description" name="description" rows="3"></textarea>
+            
+            <button type="submit">Comenzar Tirada</button>
+        </form>
+    </div>
+
+    <!-- Sección de lectura -->
+    <div class="reading-area" id="readingSection" hidden>
+        <div id="areasContainer"></div>
+        <div id="deepenSection" hidden>
+            <h3>¿Quieres profundizar en alguna área?</h3>
+            <select id="areaSelect"></select>
+            <button onclick="app.deepenReading()">Profundizar</button>
+        </div>
+    </div>
+</div>
+
+<!-- Modal de interpretación -->
+<div class="modal-overlay" id="interpretationModal" hidden>
+    <div class="modal-content">
+        <button class="close-modal" onclick="app.closeModal()">&times;</button>
+        <h3 class="modal-title"></h3>
+        <div class="interpretation-keywords"></div>
+        <div class="interpretation-content"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>

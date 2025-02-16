@@ -1,0 +1,207 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+/* Estilos del formulario */
+.form-section {
+    margin-bottom: 20px;
+}
+
+.form-section h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #6c5ce7;
+}
+
+.form-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-section input[type="date"],
+.form-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-section textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.form-section button {
+    background-color: #6c5ce7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-section button:hover {
+    background-color: #5a4acf;
+}
+
+/* Estilos de la sección de lectura */
+.reading-area {
+    display: none; /* Oculto inicialmente */
+}
+
+#areasContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.area-card {
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.area-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.area-card h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #6c5ce7;
+}
+
+.area-card p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.area-card img {
+    width: 80px;
+    height: 120px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+#deepenSection {
+    margin-top: 20px;
+}
+
+#deepenSection select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#deepenSection button {
+    background-color: #00b894;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#deepenSection button:hover {
+    background-color: #00a382;
+}
+
+/* Estilos del modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+.close-modal:hover {
+    color: #000;
+}
+
+.modal-title {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #6c5ce7;
+}
+
+.interpretation-keywords {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #00b894;
+}
+
+.interpretation-content {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+
+.interpretation-content img {
+    width: 60px;
+    height: 90px;
+    margin: 5px;
+    border-radius: 5px;
+}
